@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    font-family: Noto Sans KR;
+    font-size: 12px;
+    line-height: 24px;
+    color: #333;
+    position: relative;
+}
+
+/*header*/
+#header_wrap {
+    height: 175px;
+    width: 100%;
+    position: relative;
+}
+
+.header {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+    box-sizing: border-box;
+    height: 110px;
+}
+
+.login {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    display: flex;
+    font-weight: bold;
+}
+
+.login li a {
+    color: #706f6f;
+}
+
+#gnb_wrap {
+    height: 65px;
+    position: relative;
+    z-index: 9;
+}
+
+.gnb {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.gnb>li {
+    width: 16%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.gnb>li>a {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    color: #3c3c3b;
+    padding: 20px 0 21px 0;
+}
+
+.gnb>li>a:hover {
+    border-bottom: 2px solid #f9b10d;
+}
+
+.submenu {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: 13px;
+}
+
+.submenu li a:hover {
+    background-color: rgba(255, 255, 255, 0.8)
+}
+
+.gnb li:hover .submenu {
+    display: block;
+}
+
+.m_gnb {
+    display: none;
+}
+#title {
+    background-color: #f6f6f6;
+    height: 165px;
+    margin-bottom: 30px;
+}
+#title img{margin-right: 10px;}
+#title p {
+    text-align: center;
+    padding-top: 70px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*contain*/
+#contain{width: 1320px;
+        margin:0 auto;}
+.list{margin-top: 80px;
+        display: flex;
+      justify-content: space-around;}
+.list li{width: 270px;
+        height: 440px;
+        padding: 25px;
+        box-sizing: border-box;
+        background-color: #f6f6f6;
+        border-radius: 17px;
+        letter-spacing: -2px;}
+.img_wrap{text-align: right;
+        display: block;
+        margin-top: 25px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #f9b10d;}
+.text{margin-top: 20px;
+    word-break: break-all;}
+.text p{font-size: 17px;}
+.text h2{margin-top: 20px;
+        font-size: 23px;
+        line-height: 34px;
+        text-align: center;}
+.btn{text-align: center;
+    margin: 100px 0;}
+.btn a{display: inline-block;
+        padding: 15px 30px;
+        background-color: #f9b10d;
+        color: #fff;
+        font-size: 15px;
+        border-radius: 10px;
+        font-weight: bold;}
+.btn a:hover{background-color: #25a1ba;}
+.list li:nth-child(2){height: 410px;
+                        margin-top: 30px;}
+.list li:nth-child(3){height: 410px;
+                     margin-top: 30px;}
+
+/*footer*/
+#footer_wrap {
+    background-color: #f6f6f6;
+    color: #333;
+    text-align: left;
+    overflow: hidden;
+}
+
+.footer {
+    width: 1320px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.link {
+    text-align: left;
+    display: flex;
+}
+
+.link li a {
+    color: #333;
+    padding: 0 30px 0 0;
+    margin: 0 auto;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*tablet*/
+@media (max-width:1320px) {
+
+    /*header*/
+    .header {
+            width: 100%;
+    }
+
+    .gnb {
+            width: 100%;
+    }
+
+
+/*contain*/
+#contain{width: 100%;}
+.list{width: 80%;
+    margin: 80px auto;
+    flex-wrap: wrap;}
+.list li{height: 420px;
+        margin-top: 30px;
+}
+
+
+.list li:nth-child(2){height: 420px;
+                    margin-top: 30px;}
+.list li:nth-child(3){height: 420px;
+                 margin-top: 30px;}
+
+            /*footer*/
+            .footer {
+                width: 100%;
+                ;
+        }
+
+        .link {
+                text-align: left;
+        }
+}
+
+
+
+/*mobile*/
+@media (max-width:700px) {
+    .header {
+            width: 100%;
+            position: relative;
+    }
+
+    .login,
+    .gnb {
+            display: none;
+    }
+/*contain*/
+#contain{width: 100%;}
+.list{margin-top: 80px;
+    display: flex;}
+.list li{height: 420px;
+        margin-top: 30px;}
+
+.list li:nth-child(2){height: 420px;
+                    margin-top: 30px;}
+.list li:nth-child(3){height: 420px;
+                 margin-top: 30px;}
+
+
+
+    .m_gnb {
+            display: block;
+            position: absolute;
+            top: -70px;
+            right: 20px;
+    }
+
+            /*footer*/
+
+            .footer {
+                width: 100%;
+        }
+}

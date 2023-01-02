@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    font-family: Noto Sans KR;
+    font-size: 12px;
+    line-height: 24px;
+    color: #333;
+    position: relative;
+    height: 100%;
+}
+
+/*header*/
+#header_wrap {
+    height: 175px;
+    position: relative;
+}
+
+.header {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+    box-sizing: border-box;
+    height: 110px;
+}
+
+.login {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    display: flex;
+    font-weight: bold;
+}
+
+.login li a {
+    color: #706f6f;
+}
+
+#gnb_wrap {
+    height: 65px;
+    position: relative;
+    z-index: 9;
+}
+
+.gnb {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.gnb>li {
+    width: 16%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.gnb>li>a {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    color: #3c3c3b;
+    padding: 20px 0 21px 0;
+}
+
+.gnb>li>a:hover {
+    border-bottom: 2px solid #f9b10d;
+}
+
+.submenu {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: 13px;
+}
+
+.submenu li a:hover {
+    background-color: rgba(255, 255, 255, 0.8)
+}
+
+.gnb li:hover .submenu {
+    display: block;
+}
+
+.m_gnb {
+    display: none;
+}
+
+/*login_wrap*/
+#login_wrap {
+    width: 1320px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.login_box {
+    width: 500px;
+    border: 1px solid #f9b10d;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 150px;
+    height: 180px;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 70%;
+}
+
+input[type="text"] {
+    border: 1px solid #f9b10d;
+    padding: 10px 10px 0;
+    margin-left: 15px;
+    color: #333;
+}
+
+input[type="password"] {
+    border: 1px solid #f9b10d;
+    padding: 10px 10px 0;
+    margin: 15px 0 0 15px;
+    color: #333;
+}
+
+.text {
+    display: flex;
+    width: 230px;
+    font-size: 10px;
+    margin-left: 45px;
+    justify-content: space-between;
+}
+
+.text a {
+    font-weight: bold;
+}
+
+.login_btn a {
+    padding: 30px 20px;
+    border-radius: 5px;
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 3px;
+    background-color: #f9b10d;
+}
+
+.login_btn {
+    margin-top: 5px;
+}
+
+h3 {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.sns_icon {
+    display: flex;
+    width: 30%;
+    margin: 40px auto;
+    justify-content: space-between;
+}
+
+/*footer*/
+#footer_wrap {
+    background-color: #f6f6f6;
+    color: #333;
+    text-align: left;
+    overflow: hidden;
+}
+
+.footer {
+    width: 1320px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 30px;
+    position: relative;
+}
+
+.link {
+    text-align: left;
+    display: flex;
+}
+
+.link li a {
+    color: #333;
+    padding: 0 30px 0 0;
+    margin: 0 auto;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    clear: both;
+}
+
+.logo2 {
+    position: absolute;
+    right: 30px;
+    top: 50px;
+}
+
+
+/*tablet*/
+@media (max-width:1320px) {
+
+    /*header*/
+    #header_wrap {
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .gnb {
+        width: 100%;
+    }
+
+    /*login_wrap*/
+    #login_wrap {
+        width: 100%;
+    }
+
+    .login_box {
+        width: 60%;
+    }
+
+    .left {
+        width: 70%;
+    }
+
+    .text {
+        display: block;
+    }
+
+
+    /*footer*/
+    .footer {
+        width: 100%;
+    }
+
+    .link {
+        text-align: left;
+    }
+}
+
+
+
+
+/*mobile*/
+@media (max-width:700px) {
+    .header {
+        width: 100%;
+        position: relative;
+    }
+
+    .login,
+    .gnb {
+        display: none;
+    }
+
+    .m_gnb {
+        display: block;
+        position: absolute;
+        top: -70px;
+        right: 20px;
+    }
+
+    #login_wrap {
+        width: 100%;
+    }
+
+    .login_box {
+        width: 50%;
+        font-size: 1.2vw;
+        line-height: 12px;
+    }
+
+    .left {
+        width: 70%;
+        margin-right: 20px;
+    }
+
+    .insert p {
+        width: 100%;
+    }
+
+    .sns_icon {
+        width: 30%;
+    }
+
+    /*login_wrap*/
+    #login_wrap {
+        width: 100%;
+    }
+
+    .login_box {
+        width: 80%;
+        display: block;
+        text-align: center;
+        height: 250px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .text {
+        display: block;
+    }
+
+    .text p {
+        margin-top: 7px;
+    }
+
+    .login_btn a {
+        padding: 15px 15px;
+        border-radius: 5px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+    .sns_icon {
+        width: 50%;
+    }
+
+
+    /*footer*/
+    .footer {
+        width: 100%;
+    }
+}
